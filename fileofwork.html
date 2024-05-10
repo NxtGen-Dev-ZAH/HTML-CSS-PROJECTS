@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-green">
+  <h1>ZAHEER AHMED  WEBSITE </h1>
+  <p style="text-decoration: underline;">This is responsive page! </p>
+
+</div>
+<p>Save the document by pressing <kbd>Ctrl + 1</kbd></p>
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<style>
+    
+.w3-third2 {
+  width: calc(32.9% - 8px); /* Adjust the width based on your design and margin */
+  display: inline-block;
+  vertical-align: top;
+  flex:1;
+}
+
+</style>
+<div class="w3-row-padding">
+  <div style="border: 2px solid black ; margin: 2px;background-color: #efc2c2;" class="w3-third2">
+    <h2 Style="text-decoration: underline;">London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div  style="border: 2px solid black ; margin: 2px;background-color: #efc2c2;"class="w3-third2">
+    <h2 style="text-decoration: underline;">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div style="border: 2px solid black ; margin: 2px;background-color: #efc2c2;" class="w3-third2">
+    <h2 style="text-decoration: underline;">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+<section>
+    <h1>WWF</h1>
+    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+    
+    <section>
+    <h1>WWF's Panda symbol</h1>
+    <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+    <form  action="INFOHER.HTML" method="post" target="_blank">
+    <fieldset>
+        <legend>PERSONALIE:</legend>
+        <label for="fname">FIRST NAME:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname"> LAST NAME:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="pwd" >PASSWORD: </label><BR>
+        <input type="password" id="pwd" name="pwd" required>
+        <input type="submit" value="Submit" >      
+        <input type="reset" value="Reset"> 
+    </fieldset>  
+    </form>
+      
+      <form action="WORKHTML.HTML" target="_blank" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus required><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" onclick="alert('THIS IS THE ALERT BOX')"  formaction="mmma.jpg" value="Submit as Admin">
+      </form>
+
+      <form id="FORM3">
+        <input type="radio" id="html" name="favlan" value="HTML">
+        <label for="html">HTML</label><BR>
+        <input type="radio" id="CSS" name="favlan" value="CSS">
+        <label for="CSS">CSS</label><BR> 
+        <input type="radio" id="JAVASCRIPT" name="favlan" value="JAVASCRIPT">
+        <label for="JAVASCRIPT">JAVASCRIPT</label><BR>
+        <input type ="button" value="OK">
+      </form>
+      <label for="LNAME">LAST NAME:</label>
+      <input name="LNAME" type="text" ID="LASTNAME" form="FORM3">
+      <form>
+        <input type="checkbox" id="VEHICLE" name="VEHICLE" value="BOAT">
+        <label for="VEHICLE">BOAT</label><BR>
+        <input type="checkbox" id="VEHICLE2" name="VEHICLE2" value="CAR">
+        <label for="VEHICLE2">CAR</label><BR> 
+        <input type="checkbox" id="VEHICLE3" name="VEHICLE3" value="BIKE">
+        <label for="VEHICLE3">BIKE</label><BR>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <label for="birthdaytime">Birthday (date and time):</label>
+         <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+         <BR>
+        </form>
+
+      <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+        <BR>
+        <input type="image" src="mypic.jpg" alt="Submit" width="48" height="48">
+        <BR>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <BR>
+    <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+    <BR>
+</form>
+
+    <label for="cars">Choose a car:</label><BR>
+
+    <select id="cars" name="cars" size="3" multiple>
+  <option value="volvo" selected>Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  <option value="merce">MERCEDES</option>
+  <option value="bmw">BMW</option>
+</select><BR>
+<LABEL for="MessagE" style="border:2PX solid black;">FOLLOWING IS THE TEXT BOX</LABEL>
+<textarea name="Message" style="width: 500px; height: 300px;" >
+TTHIS IS THE TEXT COLUMN FOR THE DATA TO BE INSERTED  FOR THE SIMPLIFICATION
+</textarea>
+<button type="button" onclick="alert('THIS IS THE DATA IN THE TEXT B0X SO BE CAREFUL')">
+CLICK ME:
+</button>
+<form>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+   
+    <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </form>
+
+</body>
+</html>
+

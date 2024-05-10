@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB WORK</title>
+    <script type="text/javascript">
+      function confirmation() {
+        var answer = confirm("Leave abc.com?");
+        if (answer) {
+          alert("Bye bye!");
+          window.location = "http://www.google.com/";
+        } else {
+          alert("Thanks for sticking around!");
+        }
+      }
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var firstname;
+      firstname = "Hege";
+      document.write(firstname);
+      document.write("<br />");
+      firstname = "Tove";
+      document.write(firstname);
+    </script>
+    <form>
+      <input type="button" onclick="confirmation()" value="Leave abc.com" />
+    </form>
+    <p id="demo">This is a paragraph.</p>
+    <button type="button" onclick="displayDate()">Display Date</button>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: calc(100% - 12px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .form-footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .form-footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      /* Styling links */
+      a:link {
+        color: blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: purple;
+      }
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      a:active {
+        color: green;
+      }
+      p {
+        color: #333;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 0px;
+        text-indent: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Signup Form</h2>
+      <form onsubmit="validate()" method="post">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Signup" />
+        </div>
+      </form>
+      <div class="form-footer">
+        <p>Already have an account? <a href="#">Login here</a></p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function validate() {
+        var username = document.getElementById("fullname").value;
+        var password = document.getElementById("password").value;
+        if (username == "admin" && password == "1234") {
+          alert("Login Success");
+        } else {
+          alert("Login Failed");
+        }
+      }
+      function add() {
+        const list = document.getElementById("mylist");
+        const newItem = document.createElement("li");
+        newItem.textContent = "ITEM 3";
+        list.appendChild(newItem);
+      }
+    </script>
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button onclick="add()">ADD</button>
+    <h1>Your Name</h1>
+    <hr />
+    <h3>Contact Information</h3>
+    <ul>
+      <li>
+        Email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+      </li>
+      <li>Phone: (555) 555-5555</li>
+    </ul>
+    <h4>Summary</h4>
+    <p>
+      A brief overview of your skills and experience relevant to your target
+      job.
+    </p>
+    <h3>Education</h3>
+    <div class="section">
+      <h4>Degree Name</h4>
+      <p>University Name, City, State - Graduation Year</p>
+      <ul>
+        <li>Relevant Coursework (list 2-3 relevant courses)</li>
+      </ul>
+    </div>
+    <h3>Experience (Optional)</h3>
+    <div class="section">
+      <h4>Job Title</h4>
+      <p>Company Name, City, State - Dates of Employment</p>
+      <ul>
+        <li>List key responsibilities and achievements (2-3 bullet points)</li>
+      </ul>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>IT</td>
+          <td>Software Developer</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>HR</td>
+          <td>HR Manager</td>
+        </tr>
+        <tr>
+          <td>Michael Johnson</td>
+          <td>Finance</td>
+          <td>Financial Analyst</td>
+        </tr>
+      </tbody>
+    </table>
+    <blockquote>
+      <p>This is a longer quotation.</p>
+      <p>It can span multiple paragraphs.</p>
+    </blockquote>
+    <p>Here is an <q>inline quotation</q>.</p>
+
+    <p onclick="this.innerHTML='GOOD JOB!'">Click me.</p>
+
+  </body>
+</html>
